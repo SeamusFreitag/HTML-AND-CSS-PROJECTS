@@ -1,5 +1,11 @@
 /*IMPORT LINK FOR THE ROBOTO FONT FROM FONTS.GOOGLE.COM*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*IMPORT LINK FOR THE MUKTA FONT FROM FONTS.GOOGLE.COM*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&display=swap');
+
 body {
     background-color: white;
     overflow-x: hidden; /*HIDES THE BOTTOM LEFT RIGHT SCROLL BAR WHEN ELEMENTS STRETCH BEYOND THE SCREEN BORDER*/
@@ -41,4 +47,56 @@ a:hover{
 #nav-border{
     padding-bottom: 10px;
     border-bottom: 3px solid #FFFFFF;
+}
+
+/*HEADERS*/
+h1, h2, h3 {
+    color: #0a3f63;
+    text-align: center;
+    font-family: "Mukta", sans-serif; /*FONT FROM FONTS.GOOGLE.COM*/
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#contact-h3 {
+    text-shadow: none;
+}
+
+/*CREATES A TEXT COLOR CHANGE ANIMATION ON THE H1 TAGS FOR THE HOME AND CONTACT PAGE HEADERS*/
+@keyframes color-text {
+    0% {
+        color: #b5e1ff;
+    }
+    100%{
+        color: #0a3f63;
+    }
+}
+
+/*CALLS THE ANIMATION BY IT'S NAME IN A CSS SELECTOR SO IT CAN BE APPLIED TO A SPECIFIC HTML ELEMENT*/
+.animate-text {
+    animation: color-text 4s;
+}
+
+/*BODY CONTENT*/
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
