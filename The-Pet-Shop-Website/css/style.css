@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: white;
+    overflow-x: hidden; /*HIDES THE BOTTOM LEFT RIGHT SCROLL BAR WHEN ELEMENTS STRETCH BEYOND THE SCREEN BORDER*/
 }
 
 /*NAVBAR*/
@@ -13,4 +14,31 @@ li {
 
 a {
     font-family: 'Roboto', sans-serif; /*FONT FROM FONTS.GOOGLE.COM*/
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color: white;
+    text-decoration: none; /*REMOVES THE DEFAULT LINK STYLING*/
+}
+
+a:hover{
+    color: #d7eaf7; /*CHANGES THE COLOR OF THE ANCHOR ELEMENT WHEN A USER HOVERS THEIR MOUSE OVER IT*/
+}
+
+.nav-bar {
+    background-color: #216391;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*THE FOLLOWING MINUS MARGINS STRETCH THE NAVBAR BACKGROUND BEYON THE WEB BROWSER SCREEN EDGE*/
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: sticky; /*CREATES A STICKY ELEMENT THAT STAYS IN THE SAME SPOT IN THE BROWSER SCREEN*/
+    top: 0; /*TELLS THE BROWSER TO STICK THE ELEMENT AT THE TOP OF THE PAGE BASED ON USER SCROLLING*/
+}
+
+/*CREATES A LINE UNDER THE HOME AND CONTACT LINKS TO SEPARATE THEM FROM THE IMAGES LINKS*/
+#nav-border{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FFFFFF;
 }
