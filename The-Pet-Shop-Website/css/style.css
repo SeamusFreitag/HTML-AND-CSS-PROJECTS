@@ -8,7 +8,8 @@
 
 body {
     background-color: white;
-    overflow-x: hidden; /*HIDES THE BOTTOM LEFT RIGHT SCROLL BAR WHEN ELEMENTS STRETCH BEYOND THE SCREEN BORDER*/
+    overflow-x: hidden;
+    /*HIDES THE BOTTOM LEFT RIGHT SCROLL BAR WHEN ELEMENTS STRETCH BEYOND THE SCREEN BORDER*/
 }
 
 /*NAVBAR*/
@@ -19,16 +20,19 @@ li {
 }
 
 a {
-    font-family: 'Roboto', sans-serif; /*FONT FROM FONTS.GOOGLE.COM*/
+    font-family: 'Roboto', sans-serif;
+    /*FONT FROM FONTS.GOOGLE.COM*/
     font-size: 20px;
     font-weight: 700;
     text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
     color: white;
-    text-decoration: none; /*REMOVES THE DEFAULT LINK STYLING*/
+    text-decoration: none;
+    /*REMOVES THE DEFAULT LINK STYLING*/
 }
 
-a:hover{
-    color: #d7eaf7; /*CHANGES THE COLOR OF THE ANCHOR ELEMENT WHEN A USER HOVERS THEIR MOUSE OVER IT*/
+a:hover {
+    color: #d7eaf7;
+    /*CHANGES THE COLOR OF THE ANCHOR ELEMENT WHEN A USER HOVERS THEIR MOUSE OVER IT*/
 }
 
 .nav-bar {
@@ -39,22 +43,28 @@ a:hover{
     margin-top: -8px;
     margin-left: -10px;
     margin-right: -10px;
-    position: sticky; /*CREATES A STICKY ELEMENT THAT STAYS IN THE SAME SPOT IN THE BROWSER SCREEN*/
-    top: 0; /*TELLS THE BROWSER TO STICK THE ELEMENT AT THE TOP OF THE PAGE BASED ON USER SCROLLING*/
-    z-index: 9; /*SETS THE STACK LAYER OF THE NAVBAR TO SCROLL OVER ALL ELEMENTS*/
+    position: sticky;
+    /*CREATES A STICKY ELEMENT THAT STAYS IN THE SAME SPOT IN THE BROWSER SCREEN*/
+    top: 0;
+    /*TELLS THE BROWSER TO STICK THE ELEMENT AT THE TOP OF THE PAGE BASED ON USER SCROLLING*/
+    z-index: 9;
+    /*SETS THE STACK LAYER OF THE NAVBAR TO SCROLL OVER ALL ELEMENTS*/
 }
 
 /*CREATES A LINE UNDER THE HOME AND CONTACT LINKS TO SEPARATE THEM FROM THE IMAGES LINKS*/
-#nav-border{
+#nav-border {
     padding-bottom: 10px;
     border-bottom: 3px solid #FFFFFF;
 }
 
 /*HEADERS*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #0a3f63;
     text-align: center;
-    font-family: "Mukta", sans-serif; /*FONT FROM FONTS.GOOGLE.COM*/
+    font-family: "Mukta", sans-serif;
+    /*FONT FROM FONTS.GOOGLE.COM*/
     text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
     margin: 0px;
 }
@@ -83,7 +93,8 @@ h3 {
     0% {
         color: #b5e1ff;
     }
-    100%{
+
+    100% {
         color: #0a3f63;
     }
 }
@@ -104,15 +115,18 @@ img {
 
 .column {
     float: left;
-    width: 48%; /*PLACES THE IMAGES SIDE BY SIDE WHEN THE FLOAT PROPERTY IS USED*/
+    width: 48%;
+    /*PLACES THE IMAGES SIDE BY SIDE WHEN THE FLOAT PROPERTY IS USED*/
     padding: 10px;
 }
 
 /*GROUPS ELEMENTS INSIDE A DIV ELEMENT TOGETHER AND FORCES ANY FLOATING ELEMENTS OUTSIDE OF THE DIV UNDER IT WITH THIS CLASS SELECTOR*/
 .container {
-    background-size: 100%; !important;
+    background-size: 100%;
+    !important;
     margin: 0px -60px 50px -40px;
-    padding-top: 5px; /*PADDING WILL ADD AN INLINE SPACE SO THE ELEMENTS DON'T SIT ON THE EDGE OF THE DIV*/
+    padding-top: 5px;
+    /*PADDING WILL ADD AN INLINE SPACE SO THE ELEMENTS DON'T SIT ON THE EDGE OF THE DIV*/
     padding-bottom: 10px;
 }
 
@@ -174,4 +188,70 @@ img {
 /*THE :HOVER PSEUDO-CLASS TRIGGERS THE OVERLAY CLASS TO 60% OPACITY WHEN A USER HOVERS THEIR MOUSE OVER AN IMAGE*/
 .overlay:hover {
     opacity: 0.6;
+}
+
+/*THIS SELECTOR TARGETS THE VIDEO ON THE PAGE*/
+iframe {
+    diplay: table;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+/*STYLES THE DIV ELEMENT THAT HOLDS THE VIDEO*/
+#video {
+    background-color: #c3e0c5;
+    padding-top: 5px;
+    /*PADDING WILL ADD AN INLINE SPACE SO THE ELEMENTS DON'T SIT ON THE EDGE OF THE DIV*/
+    padding-bottom: 50px;
+}
+
+
+footer {
+    background-color: #216391;
+    margin-top: 50px;
+    /*NERGATIVE MARGINS STRETCH THE FOOTER BACKGROUND BEYOND THER WEB BROWSER SCREEN EDGE ON THE LEFT AND RIGHT */
+    margin-right: -10px;
+    margin-left: -10px;
+    bottom: 0;
+    /*POSITIONS THE FOOTER AT THE BOTTOM OF THE SCREEN*/
+}
+
+/*STYLES THE TABLE ELEMENTS WITHIN THE FOOTER TAGS */
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    width: 33%;
+    /*WE DIVIDE THE THREE COLUMBS EQUALLY SO THAT EACH COLUMB TAKES UP 1/3 OF TBHE BROWSER WIDTH*/
+}
+
+blockquote {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/*SPECIFICALLY STYLES THE PARAGRAPH ELEMENTS WITHIN THE TABLE DATA ELEMENTS*/
+td p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/*FORM CSS*/
+form {
+    padding: 15px;
+    display:table;
+    margin: auto;
+}
+
+input {
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 10px 15px 10px 0px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
 }
