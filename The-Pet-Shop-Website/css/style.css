@@ -41,6 +41,7 @@ a:hover{
     margin-right: -10px;
     position: sticky; /*CREATES A STICKY ELEMENT THAT STAYS IN THE SAME SPOT IN THE BROWSER SCREEN*/
     top: 0; /*TELLS THE BROWSER TO STICK THE ELEMENT AT THE TOP OF THE PAGE BASED ON USER SCROLLING*/
+    z-index: 9; /*SETS THE STACK LAYER OF THE NAVBAR TO SCROLL OVER ALL ELEMENTS*/
 }
 
 /*CREATES A LINE UNDER THE HOME AND CONTACT LINKS TO SEPARATE THEM FROM THE IMAGES LINKS*/
@@ -128,4 +129,49 @@ img {
     width: 500px;
     margin: auto;
     margin-bottom: 50px;
+}
+
+/*SETS THE BACKGROUND COLOR IN EACH DIV WITH AN IMAGE AND SPECIFIES WHICH ONES BY THE USE OF THE ID NAMES FOR EACH IMAGE*/
+#cat {
+    background-color: #d7eaf7;
+}
+
+#dog {
+    background-color: #c3e0c5;
+}
+
+#bird {
+    background-color: #c3e0c5;
+}
+
+#fish {
+    background-color: #d7eaf7;
+}
+
+#reptile {
+    background-color: #d7eaf7;
+}
+
+#small-pet {
+    background-color: #c3e0c5;
+}
+
+/*SETS UP THE PROPERTIES FOR THE OVERLAY ON EACH IMAGE*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+/*THE :HOVER PSEUDO-CLASS TRIGGERS THE OVERLAY CLASS TO 60% OPACITY WHEN A USER HOVERS THEIR MOUSE OVER AN IMAGE*/
+.overlay:hover {
+    opacity: 0.6;
 }
