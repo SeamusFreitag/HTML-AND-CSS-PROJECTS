@@ -122,8 +122,7 @@ img {
 
 /*GROUPS ELEMENTS INSIDE A DIV ELEMENT TOGETHER AND FORCES ANY FLOATING ELEMENTS OUTSIDE OF THE DIV UNDER IT WITH THIS CLASS SELECTOR*/
 .container {
-    background-size: 100%;
-    !important;
+    background-size: 100% !important;
     margin: 0px -60px 50px -40px;
     padding-top: 5px;
     /*PADDING WILL ADD AN INLINE SPACE SO THE ELEMENTS DON'T SIT ON THE EDGE OF THE DIV*/
@@ -192,7 +191,7 @@ img {
 
 /*THIS SELECTOR TARGETS THE VIDEO ON THE PAGE*/
 iframe {
-    diplay: table;
+    display: table;
     margin: auto;
     border-radius: 20px;
     border: none;
