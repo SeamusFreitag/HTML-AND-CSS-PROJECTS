@@ -100,3 +100,32 @@ img {
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.column {
+    float: left;
+    width: 48%; /*PLACES THE IMAGES SIDE BY SIDE WHEN THE FLOAT PROPERTY IS USED*/
+    padding: 10px;
+}
+
+/*GROUPS ELEMENTS INSIDE A DIV ELEMENT TOGETHER AND FORCES ANY FLOATING ELEMENTS OUTSIDE OF THE DIV UNDER IT WITH THIS CLASS SELECTOR*/
+.container {
+    background-size: 100%; !important;
+    margin: 0px -60px 50px -40px;
+    padding-top: 5px; /*PADDING WILL ADD AN INLINE SPACE SO THE ELEMENTS DON'T SIT ON THE EDGE OF THE DIV*/
+    padding-bottom: 10px;
+}
+
+/*THIS IS PART OF THE .CONTAINER CLASS SELECTOR TO FORMAT THE ELEMENTS TO DISPLAY IN A TABLE LIKE FORMAT*/
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*SETS UP THE SIZE OF EACH DIV THAT HOLDS AN IMAGE SO THE IMAGE CAN BE CENTERED*/
+.image-container {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
