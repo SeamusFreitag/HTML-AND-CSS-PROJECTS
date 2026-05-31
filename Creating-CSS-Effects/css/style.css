@@ -10,5 +10,17 @@ ul{
     background-color: #363636;
     margin: -10px -10px 0px -10px; /*MARGIN VALUE ORDER TOP, RIGHT, BOTTOM, AND LEFT*/
     overflow: hidden; /*HIDES EXCESS MARGIN SPACE EXPANDING PAST THE BROWSER WINDOW EDGE AND PREVENTS A LEFT TO RIGHT SCROLL BAR*/
-    
+}
+
+a {
+    display: block;
+    font-family: Calibri, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; /*REMOVES THE DEFAULT UNDERLINE LINK TEXT-DECORATION*/
+    text-transform: uppercase; /*TRANSFORMS ALL TEXT TO THE UPPERCASE REGARDLESS OF THE CASE THAT IS TYPED IN THE HTML FILE*/
+    width: 100px;
+    padding: 30px;
+    text-align: center;
 }
