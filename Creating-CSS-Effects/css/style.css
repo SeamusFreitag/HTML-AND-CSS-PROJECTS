@@ -53,3 +53,23 @@ a:hover, .drop:hover /*DROP:HOVER TRIGGERS WHEN ANY ONE OF THE LINKS IN THE IMAG
 .rollover-menu a {
     color: #363636;
 }
+
+/*SPECIFICALLY STYLES THE ANCHOR ELEMEN TS WITHIN THE DIV TAG THAT CONTAINS THE ROLLOVER-MENU COLASS SELECTOR WHEN THE HOVER EFFECT IS TRIGGERED*/
+.rollover-menu a:hover {
+    color: white;
+}
+
+/*SPECIFIICALLY STYLES THE FIRST ANCHOR ELEMENT CHILD WITHIN THE ROLLOVER-MENU DIV TAG*/
+.rollover-menu a:hover:nth-child(1) {
+    background-color: rgb(117, 20, 20);
+}
+
+/*SPECIFIICALLY STYLES THE SECOND ANCHOR ELEMENT CHILD WITHIN THE ROLLOVER-MENU DIV TAG*/
+.rollover-menu a:hover:nth-child(2) {
+    background-color: rgb(87, 7, 7);
+}
+
+/*SPECIFIICALLY STYLES THE THIRD ANCHOR ELEMENT CHILD WITHIN THE ROLLOVER-MENU DIV TAG*/
+.rollover-menu a:hover:nth-child(3) {
+    background-color: rgb(48, 2, 2);
+}
