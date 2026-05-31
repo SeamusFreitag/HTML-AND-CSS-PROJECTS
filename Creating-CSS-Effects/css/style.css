@@ -48,3 +48,8 @@ a:hover, .drop:hover /*DROP:HOVER TRIGGERS WHEN ANY ONE OF THE LINKS IN THE IMAG
 .drop:hover .rollover-menu {
     display: block;
 }
+
+/*SPECIFICALLY STYLES THE ANCHOR ELEMENTS WITHIN THE DIV TAG THAT CONTAINS THE ROLLOVER-MENU CLASS SELECTOR*/
+.rollover-menu a {
+    color: #363636;
+}
