@@ -73,3 +73,20 @@ a:hover, .drop:hover /*DROP:HOVER TRIGGERS WHEN ANY ONE OF THE LINKS IN THE IMAG
 .rollover-menu a:hover:nth-child(3) {
     background-color: rgb(48, 2, 2);
 }
+
+/*FOOTER*/
+footer {
+    background-color: #363636;
+    margin: 30px -10px -10px -10px; /*MARGIN VALUE ORDER TOP, RIGHT, BOTTOM, AND LEFT*/
+    overflow: hidden; /*HIDES EXCESS MARGIN SPACE EXPANDING PAST THE BROWSER WINDOW EDGE AND PREVENTS A LEFT TO RIGHT SCROLL BAR*/
+    height: 70px;
+}
+
+/*STYLES THE TEXT WITHIN THE FOOTER*/
+.foot-text {
+    font-family: Calibri, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: rgb(228, 159, 0);
+    text-align: center;
+}
