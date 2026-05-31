@@ -193,7 +193,7 @@ img {
     /*ZERO PRECENT IS THE START OF THE ANIMATION*/
         {
         opacity: 0.2;
-        background-color: rgb (224, 224, 224);
+        background-color: rgb(224, 224, 224);
     }
 
     100%
@@ -217,7 +217,6 @@ img {
     }
     100%{
         opacity: 0.2;
-        background-color: rgb(224, 224, 224)
-
+        background-color: rgb(224, 224, 224);
     }
 }
