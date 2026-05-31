@@ -103,3 +103,8 @@ img {
     justify-content: space-around;
     padding-top: 120px;
 }
+
+/*CREATES A UNIFORM AMOUNT OF SPACE (AS THE OTHER TWO IMAGES ON THE SCREEN) FROM THE NAVBAR TO THE TOP OF THE IMAGE WHEN THE BOOPKMARK LINK IS CLICKED ON*/
+#image3 {
+    padding-bottom: 170px;
+}
