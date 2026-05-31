@@ -10,6 +10,8 @@ ul{
     background-color: #363636;
     margin: -10px -10px 0px -10px; /*MARGIN VALUE ORDER TOP, RIGHT, BOTTOM, AND LEFT*/
     overflow: hidden; /*HIDES EXCESS MARGIN SPACE EXPANDING PAST THE BROWSER WINDOW EDGE AND PREVENTS A LEFT TO RIGHT SCROLL BAR*/
+    display: flex; /*CREATES FLEX CONTAINER SO THE ELEMENTS WILL TAKE UP AS MUCH OF THE WIDTH THAT IS AVAILABLE*/
+    align-items: center; 
 }
 
 a {
@@ -27,7 +29,7 @@ a {
 }
 
 /*NAVBAR ROLLOVER EFFECTS*/
-a:hover {
+a:hover, .drop:hover /*DROP:HOVER TRIGGERS WHEN ANY ONE OF THE LINKS IN THE IMAGES LIST IS BEING HOVERED OVER*/ {
     background-color: rgb(228, 159, 0);
     color: rgb(49, 49, 49);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
