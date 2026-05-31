@@ -1,0 +1,6 @@
+/*NAVBAR*/
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 4; /*SETS POSITION OF THE NAVBAR IN THE STACK LAYER SO IT IS ON TOP*/
+}
