@@ -228,5 +228,8 @@ p{
     #featured img{
         width: 700px;
         height: auto; /*Automatically calculates the image height based on the width*/
+        margin-left: -100px;
+        margin-top: -20px; /*Margin left and top will override margin styling from the .recipe-container class selector*/
     }
 }
+
