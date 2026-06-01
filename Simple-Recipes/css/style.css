@@ -233,3 +233,10 @@ p{
     }
 }
 
+/*Adjusts the position of the featured image to be centered in its div when the width is 1599px or less*/
+@media screen and (max-width: 1599px){
+    #featured img{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
