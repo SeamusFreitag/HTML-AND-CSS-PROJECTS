@@ -108,3 +108,25 @@ h1{
     color: rgb(0, 80, 67);
     text-align: center;
 }
+
+h2, h3, h4{
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
