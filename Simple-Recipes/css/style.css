@@ -173,3 +173,10 @@ p{
     margin: 100px auto 180px; /*Shorthand value top, right and left, then bottom*/
 }
 
+/*Styling for mobile size screens*/
+@media screen and (max-width: 600px){
+    .column img:nth-child(-n + 7){
+        width: 350px;
+        height: 225px;
+    }
+}
