@@ -66,3 +66,28 @@ a:hover, .drop:hover a:only-of-type /*ONLY-OF-TYPE EFFECTS THE ONLY CHILD ELEMEN
 .rollover-menu a:nth-child(1){
     border-top: 5px solid rgb(238, 118, 136);
 }
+
+/*FOOTER*/
+footer{
+    align-items: center; /*Will align nested HTML elements in the center i.e. the table data and paragraph elements in the footer tag*/
+    margin: 0px -8px -8px -8px; /*Stretches the footer background beyond the browsers edge leaving no white space*/
+    background-color: rgb(1, 128, 106);
+    border-top: 5px solid rgb(247, 177, 188);
+    bottom: 0; /*POSITIONS THE FOOTER AT THE BOTTOM OF THE SCREEN*/
+}
+
+table{
+    width: 100%; /*Will take up the full width of the browser screen*/
+}
+
+td{
+    width: 33%; /*Each table data item takes up 1/3 of the space available on the screen*/
+}
+
+td p{
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 177, 188);
+}
