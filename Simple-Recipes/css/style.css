@@ -359,3 +359,7 @@ input[type="button"] {
     cursor: pointer;
 }
 
+input[type="button"]:hover {
+    background-color: rgb(247, 177, 188);
+    color: white;
+}
