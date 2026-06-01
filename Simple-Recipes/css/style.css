@@ -3,29 +3,38 @@
 /*IMPORT LINK FOR THE SACRAMENTO FONT FROM FONTS.GOOGLE.COM*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Sacramento&display=swap');
 
-html{
-    overflow-x: hidden; /*Prevents the browser from displaying a left to right scroll bar as a result of negative margin values*/
-    scroll-behavior: smooth; /*CREATES A SMOOTH SCROLLING EFFECT WHEN A BOOKMARK LINK IS CLICKED */
+html {
+    overflow-x: hidden;
+    /*Prevents the browser from displaying a left to right scroll bar as a result of negative margin values*/
+    scroll-behavior: smooth;
+    /*CREATES A SMOOTH SCROLLING EFFECT WHEN A BOOKMARK LINK IS CLICKED */
 }
 
 /*NAVBAR*/
-.nav-bar{
-    position: sticky; /*Creates a sticky element that stays in the same spot in the browser screen*/
-    top: 0; /*Tells the browser to stick the element at the top of the page based on user scrolling*/
-    z-index: 9; /*Sets the stack layer of the navbar to scroll over all elements*/
+.nav-bar {
+    position: sticky;
+    /*Creates a sticky element that stays in the same spot in the browser screen*/
+    top: 0;
+    /*Tells the browser to stick the element at the top of the page based on user scrolling*/
+    z-index: 9;
+    /*Sets the stack layer of the navbar to scroll over all elements*/
 }
 
-ul{
-    display: flex; /*Creates a flex container which will expand or shrink elements to fill the space available to them and place the elements side by side horizontally*/
-    list-style-type: none; /*Removes the default styling for unordered list elements*/
+ul {
+    display: flex;
+    /*Creates a flex container which will expand or shrink elements to fill the space available to them and place the elements side by side horizontally*/
+    list-style-type: none;
+    /*Removes the default styling for unordered list elements*/
     align-items: center;
-    margin: -8px -8px 0px -8px; /*The margin order is top, right, bottom, and left. The negative margins will stretch the background beyond the edge of the browser screen*/
+    margin: -8px -8px 0px -8px;
+    /*The margin order is top, right, bottom, and left. The negative margins will stretch the background beyond the edge of the browser screen*/
     background-color: rgb(1, 128, 106);
     border-bottom: 5px solid rgb(247, 177, 188);
 }
 
-a{
-    display: block; /*Displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
+a {
+    display: block;
+    /*Displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
     font-family: 'Josefin Slab', serif;
     font-size: 25px;
     font-weight: 800;
@@ -37,64 +46,76 @@ a{
     transition: background-color 0.3 ease-in;
 }
 
-a:hover, .drop:hover a:only-of-type /*ONLY-OF-TYPE EFFECTS THE ONLY CHILD ELEMENT NESTER WITHIN AN ELEMENT. THIS WILL KEEP THE BACKGROUND COLOR BLUE WHILE HOVERING AND THE TEXT WHITE WHEN WE MOVE THE MOUSE OVER ANCHOR ELEMENTS IN THE ROLLOVER-MENU DIV*/ {
+a:hover,
+.drop:hover a:only-of-type
+
+/*ONLY-OF-TYPE EFFECTS THE ONLY CHILD ELEMENT NESTER WITHIN AN ELEMENT. THIS WILL KEEP THE BACKGROUND COLOR BLUE WHILE HOVERING AND THE TEXT WHITE WHEN WE MOVE THE MOUSE OVER ANCHOR ELEMENTS IN THE ROLLOVER-MENU DIV*/
+    {
     background-color: rgb(149, 238, 223);
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s ease-in;
 }
 
-.rollover-menu{
-    display: none; /*Prevents the anchor links in this div from showing on the web browser until otherwise specified*/
-    position: absolute; /*Absolute will position the div element relative to the position of its parent element*/
+.rollover-menu {
+    display: none;
+    /*Prevents the anchor links in this div from showing on the web browser until otherwise specified*/
+    position: absolute;
+    /*Absolute will position the div element relative to the position of its parent element*/
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*Creates a trigger effect when the user hovers their mouse over the Recipes link. The trigger will display all elements within the rollover-menu class div element*/
-.drop:hover .rollover-menu{
+.drop:hover .rollover-menu {
     display: block;
 }
 
-.rollover-menu a{
+.rollover-menu a {
     color: rgb(0, 80, 67);
 }
 
-.rollover-menu a:hover{
+.rollover-menu a:hover {
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
 }
 
-.rollover-menu a:nth-child(1){
+.rollover-menu a:nth-child(1) {
     border-top: 5px solid rgb(238, 118, 136);
 }
 
 /*FOOTER*/
-footer{
-    align-items: center; /*Will align nested HTML elements in the center i.e. the table data and paragraph elements in the footer tag*/
-    margin: 0px -8px -8px -8px; /*Stretches the footer background beyond the browsers edge leaving no white space*/
+footer {
+    align-items: center;
+    /*Will align nested HTML elements in the center i.e. the table data and paragraph elements in the footer tag*/
+    margin: 0px -8px -8px -8px;
+    /*Stretches the footer background beyond the browsers edge leaving no white space*/
     background-color: rgb(1, 128, 106);
     border-top: 5px solid rgb(247, 177, 188);
-    bottom: 0; /*POSITIONS THE FOOTER AT THE BOTTOM OF THE SCREEN*/
+    bottom: 0;
+    /*POSITIONS THE FOOTER AT THE BOTTOM OF THE SCREEN*/
 }
 
-table{
-    width: 100%; /*Will take up the full width of the browser screen*/
+table {
+    width: 100%;
+    /*Will take up the full width of the browser screen*/
 }
 
-td{
-    width: 33%; /*Each table data item takes up 1/3 of the space available on the screen*/
+td {
+    width: 33%;
+    /*Each table data item takes up 1/3 of the space available on the screen*/
 }
 
-td p{
-    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+td p {
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     color: rgb(247, 177, 188);
 }
 
-.container{
+.container {
     display: inline-block;
     background-size: 100%;
     padding-top: 60px;
@@ -102,30 +123,34 @@ td p{
 }
 
 /*HEADERS*/
-h1{
-    font-family: 'Sacramento', cursive; /*Font from fonts.google.com*/
+h1 {
+    font-family: 'Sacramento', cursive;
+    /*Font from fonts.google.com*/
     font-size: 80px;
     color: rgb(0, 80, 67);
     text-align: center;
 }
 
-h2, h3, h4{
-    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+h2,
+h3,
+h4 {
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
     text-align: center;
 }
 
-h2{
+h2 {
     color: rgb(0, 80, 67);
     font-size: 60px;
     text-decoration: underline;
     text-decoration-color: rgb(247, 177, 188);
 }
 
-h3{
+h3 {
     font-size: 30px;
 }
 
-h4{
+h4 {
     font-size: 15px;
     text-decoration: underline;
     text-transform: uppercase;
@@ -133,8 +158,9 @@ h4{
 
 /*PARAGRAPHS*/
 
-p{
-    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+p {
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 80, 67);
@@ -144,43 +170,45 @@ p{
 /*IMAGES*/
 
 /*Positions elements to sit side by side on the screen*/
-.column{
+.column {
     float: left;
     width: 48%;
     padding: 10px;
 }
 
 /*Styling for screens 1200px or smaller*/
-@media screen and (max-width: 1200px){
-    .column{
+@media screen and (max-width: 1200px) {
+    .column {
         width: 100%;
         padding: 0px;
-        margin-left: -15px; /*Centers each column on the screen*/
+        margin-left: -15px;
+        /*Centers each column on the screen*/
     }
 }
 
 /*Specifically styles the first 7 img tag elements contained in elements with the .column class*/
-.column img:nth-child(-n + 7){
+.column img:nth-child(-n + 7) {
     width: 500px;
     height: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
-                0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.recipe-container{
+.recipe-container {
     width: 500px;
     height: 350px;
-    margin: 100px auto 180px; /*Shorthand value top, right and left, then bottom*/
+    margin: 100px auto 180px;
+    /*Shorthand value top, right and left, then bottom*/
 }
 
 /*Styling for mobile size screens*/
-@media screen and (max-width: 600px){
-    .column img:nth-child(-n + 7){
+@media screen and (max-width: 600px) {
+    .column img:nth-child(-n + 7) {
         width: 350px;
         height: 225px;
     }
 
-    .recipe-container{
+    .recipe-container {
         width: 350px;
         height: 225px;
     }
@@ -191,12 +219,12 @@ p{
 }
 
 /*Alternates the blue tile background on smaller screen sizes*/
-@media screen and (max-width: 1200px){
-    #pork{
+@media screen and (max-width: 1200px) {
+    #pork {
         background-color: rgb(255, 255, 255);
     }
 
-    #biscuits{
+    #biscuits {
         background-color: rgb(149, 238, 223);
     }
 }
@@ -204,59 +232,66 @@ p{
 /*FEATURED RECIPE*/
 
 /*Styles the featured recipe h3 tag*/
-#featured-header{
-    font-family: 'Sacramento', cursive; /*Font from fonts.google.com*/
+#featured-header {
+    font-family: 'Sacramento', cursive;
+    /*Font from fonts.google.com*/
     font-size: 60px;
     color: rgb(0, 80, 67);
 }
 
-#featured-main-text{
+#featured-main-text {
     text-align: justify;
     padding-top: 20px;
     margin-left: 40px;
 }
 
 /*Sets margin left to 0 because it is not needed on a small screen and centers the text*/
-@media screen and (max-width: 1200px){
-    #featured-main-text{
+@media screen and (max-width: 1200px) {
+    #featured-main-text {
         margin-left: 0;
     }
 }
 
 /*Specifically styles the img tag nested within the #featured div in the Featured Recipe section*/
-@media screen and (min-width: 1600px){
-    #featured img{
+@media screen and (min-width: 1600px) {
+    #featured img {
         width: 700px;
-        height: auto; /*Automatically calculates the image height based on the width*/
+        height: auto;
+        /*Automatically calculates the image height based on the width*/
         margin-left: -100px;
-        margin-top: -20px; /*Margin left and top will override margin styling from the .recipe-container class selector*/
+        margin-top: -20px;
+        /*Margin left and top will override margin styling from the .recipe-container class selector*/
     }
 }
 
 /*Adjusts the position of the featured image to be centered in its div when the width is 1599px or less*/
-@media screen and (max-width: 1599px){
-    #featured img{
+@media screen and (max-width: 1599px) {
+    #featured img {
         margin-left: 0px;
         margin-top: 40px;
     }
 }
 
-@media screen and (max-width: 600px){
-    #featured .recipe-card-background{
+@media screen and (max-width: 600px) {
+    #featured .recipe-card-background {
         height: 300px;
     }
-    #featured img{
+
+    #featured img {
         margin-top: -65px
     }
 }
 
-#featured-button{
-    display: block; /*Positions the recipe button on its own line from the other elements within the div*/
+#featured-button {
+    display: block;
+    /*Positions the recipe button on its own line from the other elements within the div*/
     margin: 60px auto 0px;
     background-color: rgb(1, 128, 106);
     border-radius: 35px;
-    border: none; /*Removes default border set by the browser when border-radius is used*/
-    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    border: none;
+    /*Removes default border set by the browser when border-radius is used*/
+    font-family: 'Josefin Slab', serif;
+    /*Font from fonts.google.com*/
     font-size: 30px;
     font-weight: bold;
     padding: 15px 25px;
@@ -265,21 +300,29 @@ p{
 }
 
 /*Specifically styles the hover effect of the recipe button in the Featured Recipe section*/
-#featured-button:hover{
+#featured-button:hover {
     background-color: rgb(247, 177, 188);
 }
 
 /*IMAGE FLIP*/
 
 /*Positions the flip effect, defines transition time, and defines a 3D effect*/
-.flip{
+.flip {
     position: relative;
     width: 100%;
-    height: 100%; /*Setting the width and height to 100% will allow the effect to take up 100% of the space available*/
+    height: 100%;
+    /*Setting the width and height to 100% will allow the effect to take up 100% of the space available*/
     text-align: center;
     transition: 0.5s ease-in-out;
 }
 
-.flip:hover{
-    transform: rotateY(-180deg); /*Rotates an element from right to left*/
+.flip:hover {
+    transform: rotateY(-180deg);
+    /*Rotates an element from right to left*/
+}
+
+.flip-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
