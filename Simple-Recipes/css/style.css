@@ -1,5 +1,7 @@
 /*IMPORT LINK FOR THE JOSEFIN SLAB FONT FROM FONTS.GOOGLE.COM*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+/*IMPORT LINK FOR THE SACRAMENTO FONT FROM FONTS.GOOGLE.COM*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Sacramento&display=swap');
 
 html{
     overflow-x: hidden; /*Prevents the browser from displaying a left to right scroll bar as a result of negative margin values*/
@@ -97,4 +99,12 @@ td p{
     background-size: 100%;
     padding-top: 60px;
     padding-left: 30px;
+}
+
+/*HEADERS*/
+h1{
+    font-family: 'Sacramento', cursive; /*Font from fonts.google.com*/
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
 }
