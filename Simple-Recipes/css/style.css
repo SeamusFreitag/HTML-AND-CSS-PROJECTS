@@ -157,3 +157,9 @@ p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
                 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px; /*Shorthand value top, right and left, then bottom*/
+}
