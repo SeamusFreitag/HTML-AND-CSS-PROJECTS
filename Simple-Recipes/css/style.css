@@ -91,3 +91,10 @@ td p{
     text-align: center;
     color: rgb(247, 177, 188);
 }
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
