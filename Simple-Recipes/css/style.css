@@ -3,6 +3,7 @@
 
 html{
     overflow-x: hidden; /*Prevents the browser from displaying a left to right scroll bar as a result of negative margin values*/
+    scroll-behavior: smooth; /*CREATES A SMOOTH SCROLLING EFFECT WHEN A BOOKMARK LINK IS CLICKED */
 }
 
 /*NAVBAR*/
@@ -34,7 +35,7 @@ a{
     transition: background-color 0.3 ease-in;
 }
 
-a:hover{
+a:hover, .drop:hover a:only-of-type /*ONLY-OF-TYPE EFFECTS THE ONLY CHILD ELEMENT NESTER WITHIN AN ELEMENT. THIS WILL KEEP THE BACKGROUND COLOR BLUE WHILE HOVERING AND THE TEXT WHITE WHEN WE MOVE THE MOUSE OVER ANCHOR ELEMENTS IN THE ROLLOVER-MENU DIV*/ {
     background-color: rgb(149, 238, 223);
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
@@ -60,4 +61,8 @@ a:hover{
 .rollover-menu a:hover{
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238, 118, 136);
 }
