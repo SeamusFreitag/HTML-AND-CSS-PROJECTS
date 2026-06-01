@@ -240,3 +240,31 @@ p{
         margin-top: 40px;
     }
 }
+
+@media screen and (max-width: 600px){
+    #featured .recipe-card-background{
+        height: 300px;
+    }
+    #featured img{
+        margin-top: -65px
+    }
+}
+
+#featured-button{
+    display: block; /*Positions the recipe button on its own line from the other elements within the div*/
+    margin: 60px auto 0px;
+    background-color: rgb(1, 128, 106);
+    border-radius: 35px;
+    border: none; /*Removes default border set by the browser when border-radius is used*/
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/*Specifically styles the hover effect of the recipe button in the Featured Recipe section*/
+#featured-button:hover{
+    background-color: rgb(247, 177, 188);
+}
