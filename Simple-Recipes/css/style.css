@@ -209,3 +209,9 @@ p{
     font-size: 60px;
     color: rgb(0, 80, 67);
 }
+
+#featured-main-text{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
