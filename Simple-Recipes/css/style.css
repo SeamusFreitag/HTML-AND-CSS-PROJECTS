@@ -1,3 +1,6 @@
+/*IMPORT LINK FOR THE JOSEFIN SLAB FONT FROM FONTS.GOOGLE.COM*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
 html{
     overflow-x: hidden; /*Prevents the browser from displaying a left to right scroll bar as a result of negative margin values*/
 }
@@ -16,4 +19,15 @@ ul{
     margin: -8px -8px 0px -8px; /*The margin order is top, right, bottom, and left. The negative margins will stretch the background beyond the edge of the browser screen*/
     background-color: rgb(1, 128, 106);
     border-bottom: 5px solid rgb(247, 177, 188);
+}
+
+a{
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247, 177, 188);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
 }
