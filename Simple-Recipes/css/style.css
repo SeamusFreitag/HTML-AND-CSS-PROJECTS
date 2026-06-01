@@ -149,3 +149,11 @@ p{
     width: 48%;
     padding: 10px;
 }
+
+/*Specifically styles the first 7 img tag elements contained in elements with the .column class*/
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+                0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
