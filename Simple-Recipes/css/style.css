@@ -179,4 +179,13 @@ p{
         width: 350px;
         height: 225px;
     }
+
+    .recipe-container{
+        width: 350px;
+        height: 225px;
+    }
+}
+
+.recipe-card-background {
+    background-color: rgb(149, 238, 223);
 }
