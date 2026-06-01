@@ -130,3 +130,22 @@ h4{
     text-decoration: underline;
     text-transform: uppercase;
 }
+
+/*PARAGRAPHS*/
+
+p{
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+/*IMAGES*/
+
+/*Positions elements to sit side by side on the screen*/
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
