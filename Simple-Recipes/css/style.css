@@ -222,3 +222,11 @@ p{
         margin-left: 0;
     }
 }
+
+/*Specifically styles the img tag nested within the #featured div in the Featured Recipe section*/
+@media screen and (min-width: 1600px){
+    #featured img{
+        width: 700px;
+        height: auto; /*Automatically calculates the image height based on the width*/
+    }
+}
