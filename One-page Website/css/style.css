@@ -24,3 +24,15 @@ p, li {
     font-size: 20px;
 }
 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 300px;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: 3px solid #c9a84c;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
