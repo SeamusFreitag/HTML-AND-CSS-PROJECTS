@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz@0,6..96;1,6..96&family=Chakra+Petch&family=Rock+Salt&display=swap');
 
+body {
+    background-color: #111111;
+    color: #f0f0f0;
+}
+
+nav a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 h1 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     font-size: 60px;
+    color: #c9a84c;
 }
 
 h2 {
