@@ -126,6 +126,10 @@ h1 {
     font-size: 100px;
 }
 
+h3{
+    font-family: var(--main-font-family);
+    font-size: 50px;
+}
 
 /*MOVIE CARDS*/
 .container {
