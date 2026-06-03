@@ -14,7 +14,9 @@
 
 body {
     background-image: url('../images/theater-curtains.jpg');
-    background-size: 100%;
+    background-size: 100% 120%; /*100% horizontally and 120$ vertically*/
+    background-attachment: fixed;
+    overflow-x: hidden; /*Removes left to right scroll bar */
 }
 
 .navbar {
