@@ -118,6 +118,10 @@ drop down menu*/
 
 /*GENERAL STYLING*/
 
+h1, h3, p {
+    cursor: default; /*changes the cursor back to the default arrow instead of a text cursor when hovering your mouse over text*/
+}
+
 h1 {
     font-family: var(--main-font-family);
     color: var(--main-color-accent);
@@ -129,6 +133,10 @@ h1 {
 h3{
     font-family: var(--main-font-family);
     font-size: 50px;
+}
+
+b{
+    font-weight: 600;
 }
 
 /*MOVIE CARDS*/
