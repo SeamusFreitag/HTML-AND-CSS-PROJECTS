@@ -16,6 +16,10 @@
     --secondary-font-family: 'Yesteryear', cursive;
 }
 
+html {
+    scroll-padding-top: 100px;
+}
+
 body {
     background-image: url('../images/theater-curtains.jpg');
     background-size: 100% 120%;
