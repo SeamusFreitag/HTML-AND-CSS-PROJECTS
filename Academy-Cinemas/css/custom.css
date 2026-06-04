@@ -1,6 +1,9 @@
 /*Font Passion One from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+/*Font Yesteryear from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
 /*Creates global CSS variables that can be reused throughout the file*/
 :root {
     --main-color: rgb(126, 133, 130);
@@ -10,13 +13,16 @@
     --accent-color: rgb(36, 36, 36);
     --accent-text-color: rgb(255, 255, 255);
     --main-font-family: 'Passion One', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
 }
 
 body {
     background-image: url('../images/theater-curtains.jpg');
-    background-size: 100% 120%; /*100% horizontally and 120$ vertically*/
+    background-size: 100% 120%;
+    /*100% horizontally and 120$ vertically*/
     background-attachment: fixed;
-    overflow-x: hidden; /*Removes left to right scroll bar */
+    overflow-x: hidden;
+    /*Removes left to right scroll bar */
 }
 
 .navbar {
@@ -118,8 +124,12 @@ drop down menu*/
 
 /*GENERAL STYLING*/
 
-h1, h3, p {
-    cursor: default; /*changes the cursor back to the default arrow instead of a text cursor when hovering your mouse over text*/
+h1,
+h3,
+p,
+h4 {
+    cursor: default;
+    /*changes the cursor back to the default arrow instead of a text cursor when hovering your mouse over text*/
 }
 
 h1 {
@@ -130,12 +140,17 @@ h1 {
     font-size: 100px;
 }
 
-h3{
+h3 {
     font-family: var(--main-font-family);
     font-size: 50px;
 }
 
-b{
+h4 {
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
+b {
     font-weight: 600;
 }
 
