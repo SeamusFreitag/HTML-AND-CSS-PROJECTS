@@ -158,3 +158,17 @@ b {
 .container {
     padding: 100px;
 }
+
+/*BUTTONS*/
+
+/*Creates the main styling for buttons that contain the Bootstrap .btn class*/
+.btn{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
