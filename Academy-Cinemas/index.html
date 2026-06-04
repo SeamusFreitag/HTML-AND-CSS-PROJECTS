@@ -184,7 +184,7 @@
             <div class="d-flex flex-row flex-wrap">
                 <!-- MOVIE SELECTION -->
                 <div class="col">
-                    <div class="card"">
+                    <div class="card text-center"">
                         <h5 class=" card-title"">Please select a movie</h5>
                         <div class="card-body">
                             <select class="form-select" aria-label="Movie title selection">
@@ -198,9 +198,9 @@
                 </div>
                 <!--TIME SELECTION-->
                 <div class="col">
-                    <div class="card"">
+                    <div class="card text-center">
                         <h5 class=" card-title"">Please select a show time</h5>
-                        <div class="card-body">
+                        <div class=" card-body">
                             <select class="form-select" aria-label="Show time selection">
                                 <option selected>Select time</option>
                                 <option value="1">10:00 AM</option>
@@ -210,19 +210,25 @@
                                 <option value="5">4:50 PM</option>
                                 <option value="6">8:00 PM</option>
                             </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- NUMBER OF TICKETS-->
-                <div class="col">
-                    <div class="card"">
-                        <h5 class=" card-title"">Please select number of tickets</h5>
-                        <div class="card-body">
-                            <input type="number" id="quantity" value="1" step="1">
-                        </div>
                     </div>
                 </div>
             </div>
+            <!-- NUMBER OF TICKETS-->
+            <div class="col">
+                <div class="card text-center"">
+                        <h5 class=" card-title"">Please select number of tickets</h5>
+                    <div class="card-body">
+                        <input type="number" id="quantity" value="1" step="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BUY TICKETS BUTTON-->
+        <div class="row justify-content-center">
+            <div class="col">
+                <button type="submit" class="btn yellow-btn">Buy Tickets</button>
+            </div>
+        </div>
         </div>
     </section>
 </body>
